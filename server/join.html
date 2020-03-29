@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action = "http://localhost:8000/join_process" method="get">
+        FirstName : <input type="text" name ="mem_fname1"> <br>
+        LastName :  <input type="text" name ="mem_sname1"> <br>
+        Password :  <input type="password" name ="mem_password1"> <br>
+        e-mail:  <input type="email" name ="mem_email1"> <br>
+        your birth : <input type="text" name ="mem_year1" placeholder = "year">
+                    <input type="text" name ="mem_month1" placeholder = "month">
+                    <input type="text" name ="mem_day1" placeholder = "day"> <br>
+        sex :  
+        <select name = "mem_gender1">
+            <option>F</option>
+            <option>M</option>
+        </select> <br>
+        <input type = "submit" value="create" onclick="location.href='join_process'">submit</button>
+    </form>
+</body>
+</html>

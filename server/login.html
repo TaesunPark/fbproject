@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>로그인 홈페이지</h1>
+    <form action = "http://localhost:8000/login_process">
+        email : <input type="text" name="email" placeholder = "이메일 값을 입력하십시오"> <br>
+        password : <input type="password" name = "password" placeholder = "비밀번호 값을 입력하십시오">
+        <input type="submit" value="로그인" onclick="location.href= 'login_process'"><br>
+    </form>
+    <a href="/join">회원가입하러가기</a>
+</body>
+</html>

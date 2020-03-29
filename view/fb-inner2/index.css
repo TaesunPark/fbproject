@@ -1,0 +1,224 @@
+html, body {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.head-container{
+    display: flex;
+    height: 40px;
+    background-color: #3B5998;
+}
+.head-box1{
+    position: relative;
+    left: 150px;
+    display: inline-block;
+}
+.head-box2{
+    position: relative;
+    left: 200px;
+}
+.set1{
+    display: inline;
+}
+.set2{
+    display: inline;
+    position: relative;
+    top:4px;
+}
+#image{
+    position: relative;
+    top : 5px;
+}
+.name-box{
+    display: inline;
+    border: 0;
+    color: white;
+    font-size: 11px;
+    padding: 6px;
+    margin: 0px;
+    background-color: #3B5998;
+    cursor: pointer;
+}
+.name-box2{
+    background-color: #3B5998;
+    border: #3B5998;
+    cursor: pointer;
+}
+.name-box:hover{
+    background-color: teal;
+}
+.name-box1{
+    display: inline;
+}
+
+.fix-size{
+    width: 4%;
+    height: auto;
+    position: relative;
+    top :  10px;
+}
+#search-bar {
+    position: relative;  
+    top : 3px;
+    width: 350px;
+}
+#search-bar1{
+    position: relative;
+    right: 5.2px;
+    top : 2px;
+    cursor: pointer;
+}
+#search-bar1:hover{
+    opacity: 90%;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 170px;
+    top : 30px;
+    right: 5px;
+}
+.dropdown-content::before{
+    content: '';
+    display:block;
+    width:0;
+    height:0;
+    color:transparent;
+    border:10px solid #CCC;
+    border-color:transparent transparent #FFF;
+    margin-top:-20px;
+    margin-left:150px;
+}
+.dropdown-content a{
+    color: black;
+    background-color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    background-color: blue;
+    color: white;
+}
+#notifications{
+    display:none;
+    width: 430px;
+    position: absolute;
+    top : 30px;
+    left : 0;
+    background: #FFF;
+    border : solid 1px rgba(100,100,100, .20);
+    
+    
+}
+#notifications1{
+    display:none;
+    width: 430px;
+    position: absolute;
+    top : 30px;
+    left : 0;
+    background: #FFF;
+    border : solid 1px rgba(100,100,100, .20);
+    
+}
+#notifications2{
+    display:none;
+    width: 430px;
+    position: absolute;
+    top : 30px;
+    left : 0;
+    background: #FFF;
+    border : solid 1px rgba(100,100,100, .20);
+    
+}
+#notifications:before {
+    content: '';
+    display:block;
+    width:0;
+    height:0;
+    color:transparent;
+    border:10px solid #CCC;
+    border-color:transparent transparent #FFF;
+    margin-top:-20px;
+    margin-left:10px;
+}
+#notifications1:before {
+    content: '';
+    display:block;
+    width:0;
+    height:0;
+    color:transparent;
+    border:10px solid #CCC;
+    border-color:transparent transparent #FFF;
+    margin-top:-20px;
+    margin-left:45px;
+}
+#notifications2:before {
+    content: '';
+    display:block;
+    width:0;
+    height:0;
+    color:transparent;
+    border:10px solid #CCC;
+    border-color:transparent transparent #FFF;
+    margin-top:-20px;
+    margin-left:80px;
+}
+
+#body-container{
+    display: block;
+    background-color: #f1f3f5;
+    height:  100%;
+}
+#body-container2{
+    display: flex;
+    background-color: #f1f3f5;
+    width: 940px;
+    height: 100%;
+    position: relative;
+}
+#body-container3{
+    display: block;
+    background-color: #f1f3f5;
+    width: 200px;
+    height: 100%;
+    position: relative;
+    left: 100px;
+    top: 0px;
+    margin: 0px;
+    
+}
+#dropbox{
+    display: block;
+    list-style: none;
+    position: relative;
+    top: 30px;
+}
+#dropbox-person{
+    position: relative;
+    bottom: 20px;
+    padding :6px ;
+}
+ul li{
+    display: flex;
+    cursor: pointer;
+    margin: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+ul li:hover{
+    background-color : gainsboro;
+}
+li img{
+    display: flex;
+    position: relative;
+    
+}
+#body-container4{
+    display: flex;
+    height: 100%;
+    background-color: white;
+    width: 500px;
+}

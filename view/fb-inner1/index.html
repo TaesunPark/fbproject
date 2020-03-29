@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - 로그인 또는 가입</title>
+    <link rel = "stylesheet" type="text/css" href="./index.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+    <script src ="./index.js"></script>
+</head>
+<body>
+    <div class = "head-container1">
+       <a href="/"><img src = "./facebook.png" id = "img1"></a>
+        <form id = "login-form" action="">
+            <div class = "head-form1">
+                 <label class = "head-form2">이메일 또는 휴대폰</label><br>
+                 <input class = "head-form3" type="text">
+            </div>
+             <div class = "head-form1">
+                 <label class = "head-form2">비밀번호</label><br>
+                 <input class = "head-form3" type="password" >
+                 <br><a href="/"><label id = "btn2" class = "head-form2">계정을 잊으셨나요?</label></a>
+             </div>
+        </form>
+        <button id = "btn1"><a class = "btn1c" href = "./fb-inner2">로그인</a></button>
+        
+    </div>
+
+    <div class = "body-container1">
+        <div class = "body-grid1">
+            <div>Facebook에서 전세계에 있는 친구, 가족, 지인들과 함께 이야기를 나눠보세요</div>
+            <div><img src = "./지도.png" alt width="536" height="194"></div>
+        </div>
+        <form action="" class = "body-grid2">
+            <div class = "body-font1">가입하기</div>
+            <div class = "body-font2">빠르고 쉽습니다.</div>
+            <div>
+                <div class = "login1">
+                    <div><input id="js-checkbox1" name = "fname" class = "login-form" type ="text"  placeholder ="성(姓)"></div>
+                    <div id = "js-textbox1">이름이 무엇인가요</div>
+                    <div><input id="js-checkbox2" name = "sname" class = "login-form" type = "text" placeholder = "이름" style="position:relative; left: 10px;"></div>
+                    <div id = "js-textbox2">이름이 무엇인가요</div>
+                </div>
+                <div>
+                    <div><input id="js-checkbox3" name = "email" class = "login-form2" type ="text" placeholder ="휴대폰 번호 또는 이메일"></div>
+                    <div id ="js-textbox3">로그인할 때와 비밀번호를 재설정해야 할 때 사용하는 정보입니다.</div>
+                    <div><input id="js-checkbox4" name = "currentPassword" class = "login-form2" type ="password" placeholder ="새 비밀번호"></div>
+                    <div id ="js-textbox4">숫자, 영문, 특수기호(!, &등)를 조합한 여섯 자리 이상의 비밀번호를 입력하세요</div>
+                </div>
+            </div>
+            <div class ="birthDay">
+                <label style="color: grey;">생일</label>
+                <div>
+                    <span>
+                        <select id = "js-drop1" onclick="yfunction()" class = "box-shape">
+                            <option>1955</option><option>1956</option><option>1957</option><option>1958</option>
+                            <option>1959</option><option>1960</option><option>1961</option><option>1962</option>
+                            <option>1963</option><option>1964</option><option>1965</option><option>1966</option>
+                            <option>1967</option><option>1968</option><option>1969</option><option>1970</option>
+                            <option>1971</option><option>1972</option><option>1973</option><option>1974</option>
+                            <option>1975</option><option>1976</option><option>1977</option><option>1978</option>
+                            <option>1979</option><option>1980</option><option>1981</option><option>1982</option>
+                            <option>1983</option><option>1984</option><option>1985</option><option>1986</option>
+                            <option>1987</option><option>1988</option><option>1989</option><option>1990</option>
+                            <option>1991</option><option>1992</option><option>1993</option><option>1994</option>
+                            <option>1995</option><option>1996</option><option>1997</option><option>1998</option>
+                            <option>1999</option><option>2000</option><option>2001</option><option>2002</option>
+                            <option>2003</option><option>2004</option><option>2005</option><option>2006</option>
+                            <option>2007</option><option>2008</option><option>2009</option><option>2010</option>
+                            <option>2011</option><option>2012</option><option>2013</option><option>2014</option>
+                            <option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option>
+                        </select>
+                        <select id = "js-drop2" onclick="mfunction()" class = "box-shape">
+                            <option>1월</option><option>2월</option><option>3월</option><option>4월</option><option>5월</option><option>6월</option>
+                            <option>7월</option><option>8월</option><option>9월</option><option>10월</option><option>11월</option><option>12월</option>
+                        </select>
+                        <select id = "js-drop3" onclick="dfunction()" class = "box-shape">
+                            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+                            <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+                            <option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option>
+                            <option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option>
+                            <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <label style="color: grey;">성별</label>
+                <div>
+                    <span class ="radio-box">
+                        <input type ="radio" name ="name1">
+                        <label style="font-size: 18px;">여성</label>
+                        <input type ="radio" name ="name1">
+                        <label style="font-size: 18px;">남성</label>
+                        <input type ="radio" name ="name1">
+                        <label style="font-size: 18px;">직접 지정</label>
+                    </span>
+            
+                </div>
+            </div>
+            <div class = "submain1"><p>가입하기 버튼을 클릭하면 Facebook의 약관, 데이터 정책 및 쿠키 정책에 동의하게 됩니다. Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.</p></div>
+        <div>
+            <input type="submit" value ="가입하기" class ="btn3">
+        </div>
+        <div>
+            <p style="font-size: 13px; color: dimgrey; font-weight: bold;">유명인, 밴드, 비즈니스를 위한 페이지 만들기</p>
+        </div> 
+    </form>
+</div>
+<div class = "container3">        
+    <ul class = "list3">
+        <a href="/https://taesunpark.github.io"><li class="listt">korean</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">English</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">Tiếng Việt</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">Bahasa Indonesia</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">ภาษาไทย</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">中文(简体)</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">日本語</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">Português (Brasil)</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">Français (France)</li></a>
+        <a href="/https://taesunpark.github.io"><li class="listt">Deutsch
+        </li></a>
+    </ul>
+    <hr class = "list3">
+    </ul>
+</div>
+
+</body>
+</html>

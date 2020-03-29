@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <div class="head-container">
+        <div class = "head-box1">
+            <img src ="facebook로고.png" class = "fix-size" style="cursor: pointer;">
+            <input type="text" id = "search-bar"  class = "fix-size"  value="검색">
+            <button id ="search-bar1"><img src ="돋보기.png" width="10px" height="10px"></button>               
+        </div>
+            <div class = "head-box2" >
+                <div class = "set1">
+                    <button class = "name-box">
+                       <img id = "image" src="사람.png" alt="사람"  width="20px">
+                       <div class = "set1">박태순</div>
+                    </button>
+                    <button class = "name-box"> 홈 </button>
+                    <button class = "name-box"> 만들기 </button>
+                </div>
+                <div class = "set2">
+                    <button onclick = "myFunction()" class = "name-box2" ><img  src="겹쳐있는사람.png" alt="사람" width="20px" height="20px"></button>                 
+                        <div id = "notifications">
+                            <h3>친구요청</h3>
+                            <div style="height: 300px;"></div>
+                        </div>
+                    <button onclick="myFunction1()" class = "name-box2"><img  src= "메시지.png" alt="사람" width="20px" height="20px"></button>
+                        <div id = "notifications1">
+                            <h3>메세지요청</h3>
+                            <div style="height: 300px;"></div>
+                        </div>
+                    <button onclick = "myFunction2()" class = "name-box2 "><img  src= "종.png".png" alt="사람" width="20px" height="20px"></button>
+                        <div id = "notifications2">
+                            <h3>알림</h3>
+                            <div style="height: 300px;"></div>
+                        </div>
+                </div>
+                <div class = "set2">
+                    <button class = "name-box2"><img src="도움말.png" alt = "도움말" height="20px" width="20px"></button>
+                    <button onclick = "myButton()" class = "name-box2"><img src="드롭다운.png" alt = "드롭다운" height="20px" width="20px"></button>
+                        <div class ="dropdown-content">
+                            <a href="#">내그룹</a>
+                            <a href="#">Facebook에서 광고하기</a>
+                            <a href="#">설정</a>
+                            <a href="#">로그아웃</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id = "body-container">
+            <div id = "body-container2">
+                <div id = "body-container3">
+                    <ul id = "dropbox">
+                       <li id = "dropbox-person"><img src="사람.png" alt="사람"  width="20px" height="20px">박태순</li> 
+                       <div>
+                            <li>뉴스피드</li> 
+                            <li>Messenger</li> 
+                            <li>Watch</li> 
+                       </div>
+                    </ul>
+                </div>
+                <div id = "body-container4">
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>
